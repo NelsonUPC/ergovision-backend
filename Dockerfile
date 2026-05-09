@@ -7,13 +7,13 @@ RUN mvn dependency:go-offline
 COPY ./src ./src
 RUN mvn clean install -DskipTests
 
-FROM openjdk:26-ea-21-slim
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /opt/app/
 
 COPY --from=build /opt/app/target/ergovision-0.0.1-SNAPSHOT.jar ergovision.jar
 
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache curl
 
 EXPOSE 8080
 
