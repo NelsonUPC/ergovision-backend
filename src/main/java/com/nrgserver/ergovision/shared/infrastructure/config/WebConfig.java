@@ -18,7 +18,8 @@ public class WebConfig {
                         .allowedOrigins(
                                 "http://localhost:4200",
                                 "http://10.0.2.2:8080",
-                                "https://ergovision-webapp.onrender.com"
+                                "https://ergovision-webapp.onrender.com",
+                                "https://ergovisionpe.web.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("Authorization", "Content-Type", "X-Requested-With", "Accept", "Origin")
@@ -29,7 +30,8 @@ public class WebConfig {
                         .allowedOrigins(
                                 "http://localhost:4200",
                                 "http://10.0.2.2:8080",
-                                "https://ergovision-webapp.onrender.com"
+                                "https://ergovision-webapp.onrender.com",
+                                "https://ergovisionpe.web.app"
                         )
                         .allowedMethods("GET", "POST", "OPTIONS")
                         .allowedHeaders("Authorization", "Content-Type", "X-Requested-With", "Accept", "Origin")
@@ -40,7 +42,8 @@ public class WebConfig {
                         .allowedOrigins(
                                 "http://localhost:4200",
                                 "http://10.0.2.2:8080",
-                                "https://ergovision-webapp.onrender.com"
+                                "https://ergovision-webapp.onrender.com",
+                                "https://ergovisionpe.web.app"
                         )
                         .allowedMethods("GET", "POST", "OPTIONS")
                         .allowedHeaders("Authorization", "Content-Type", "X-Requested-With", "Accept", "Origin")
